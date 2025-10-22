@@ -6,9 +6,7 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -32,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img updating>
 </p>
 <p>
 <h2>Step 1: Install Active Directory and Create Admin User</h2>
@@ -41,7 +39,7 @@ First, log in to your DC-1 virtual machine and install the Active Directory Doma
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img updating>
 </p>
 <p>
 <h2>Step 2: Join Client-1 to the Domain</h2>
@@ -50,7 +48,7 @@ Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img updating>
 </p>
 <p>
 <h2>Step 3: Enable Remote Desktop for Domain Users</h2>
@@ -59,7 +57,7 @@ Log in to Client-1, this time using your new domain admin account (mydomain.com\
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img updating>
 </p>
 <p>
 <h2>Step 4: Bulk-Create Users and Test Login</h2>
