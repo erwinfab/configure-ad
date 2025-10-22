@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img updating>
+updating image...
 </p>
 <p>
 <h2>Step 1: Install Active Directory and Create Admin User</h2>
@@ -39,7 +39,7 @@ First, log in to your DC-1 virtual machine and install the Active Directory Doma
 <br />
 
 <p>
-<img updating>
+updating image...
 </p>
 <p>
 <h2>Step 2: Join Client-1 to the Domain</h2>
@@ -48,7 +48,7 @@ Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In 
 <br />
 
 <p>
-<img updating>
+updating image...
 </p>
 <p>
 <h2>Step 3: Enable Remote Desktop for Domain Users</h2>
@@ -57,7 +57,7 @@ Log in to Client-1, this time using your new domain admin account (mydomain.com\
 <br />
 
 <p>
-<img updating>
+updating image...
 </p>
 <p>
 <h2>Step 4: Bulk-Create Users and Test Login</h2>
