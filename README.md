@@ -30,7 +30,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-updating image...
+<img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
+<img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
+<img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
+<img width="238" height="139" alt="image" src="https://github.com/user-attachments/assets/bd60fb6c-e359-44b2-8281-48195dd1854e" />
+<img width="286" height="212" alt="image" src="https://github.com/user-attachments/assets/08b87177-d016-4ae6-9183-bc876d2b34f7" />
+<img width="257" height="67" alt="image" src="https://github.com/user-attachments/assets/184a723b-bca6-42ef-89c4-71dfe1ac562b" />
+
+
+
+
+
 </p>
 <p>
 <h2>Step 1: Install Active Directory and Create Admin User</h2>
