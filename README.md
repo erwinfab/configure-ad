@@ -36,6 +36,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="238" height="139" alt="image" src="https://github.com/user-attachments/assets/bd60fb6c-e359-44b2-8281-48195dd1854e" />
 <img width="286" height="212" alt="image" src="https://github.com/user-attachments/assets/08b87177-d016-4ae6-9183-bc876d2b34f7" />
 <img width="257" height="67" alt="image" src="https://github.com/user-attachments/assets/184a723b-bca6-42ef-89c4-71dfe1ac562b" />
+<img width="142" height="74" alt="image" src="https://github.com/user-attachments/assets/42208fc9-167f-4136-93fc-5311a1611270" />
+<img width="134" height="113" alt="image" src="https://github.com/user-attachments/assets/a61affc2-c865-4889-bdd1-872677e3ff10" />
+<img width="428" height="64" alt="image" src="https://github.com/user-attachments/assets/eed04ab1-722d-49b6-a388-9d8b23e9ecb3" />
+<img width="212" height="130" alt="image" src="https://github.com/user-attachments/assets/3f6e6b67-696c-4adf-887a-a4ad7da49034" />
 
 
 
@@ -49,11 +53,20 @@ First, log in to your DC-1 virtual machine and install the Active Directory Doma
 <br />
 
 <p>
-updating image...
+<img width="145" height="74" alt="image" src="https://github.com/user-attachments/assets/691064ba-3762-4193-af21-a9f4937d8b07" />
+<img width="163" height="194" alt="image" src="https://github.com/user-attachments/assets/6a3dbe4e-396c-41ae-90e7-8ad521265984" />
+<img width="175" height="118" alt="image" src="https://github.com/user-attachments/assets/8424188f-5302-4655-8740-e9dfd9df4e34" />
+<img width="433" height="77" alt="image" src="https://github.com/user-attachments/assets/cc3c5692-4c1f-4998-8b20-8295181c3b7a" />
+<img width="190" height="214" alt="image" src="https://github.com/user-attachments/assets/bd5d1a9c-e3c3-4d1c-9461-7ee6e9d84923" />
+<img width="435" height="59" alt="image" src="https://github.com/user-attachments/assets/09ae9291-bcdf-4459-8b7d-f45efed7b4d4" />
+<img width="434" height="62" alt="image" src="https://github.com/user-attachments/assets/7ebf3a44-2691-48fd-9cec-b5bb7eba03f0" />
+
+
+  
 </p>
 <p>
 <h2>Step 2: Join Client-1 to the Domain</h2>
-Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In a real lab, you would first set Client-1's DNS settings in the Azure Portal to point to DC-1's private IP address and restart, but this is marked as already done ). From the System Properties window, join Client-1 to the mydomain.com domain. After Client-1 restarts, log back into your DC-1 server and open ADUC. Verify that Client-1 now appears in the "Computers" container. Create a new OU named _CLIENTS and drag the Client-1 computer object into it for organization.
+Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In a real lab, you would first set Client-1's DNS settings in the Azure Portal to point to DC-1's private IP address and restart, but this is marked as already done ). From the System Properties window, join Client-1 to the mydomain.com domain. After Client-1 restarts, log back into your DC-1 server and open ADUC (Active Directory Users and Computers). Verify that Client-1 now appears in the "Computers" container. Create a new OU (Organizational Unit) named _CLIENTS and drag the Client-1 computer object into it for organization.
 </p>
 <br />
 
