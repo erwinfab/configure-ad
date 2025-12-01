@@ -71,7 +71,11 @@ Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In 
 <br />
 
 <p>
-updating image...
+<img width="262" height="132" alt="image" src="https://github.com/user-attachments/assets/9c77096c-04f2-4e80-9347-25dadcb84a29" />
+<img width="275" height="197" alt="image" src="https://github.com/user-attachments/assets/2fc74261-3061-4876-a229-e080bd00515a" />
+
+
+
 </p>
 <p>
 <h2>Step 3: Enable Remote Desktop for Domain Users</h2>
@@ -80,11 +84,20 @@ Log in to Client-1, this time using your new domain admin account (mydomain.com\
 <br />
 
 <p>
-updating image...
+<img width="129" height="56" alt="image" src="https://github.com/user-attachments/assets/9d75dc9b-e38b-47bb-b3ef-8f17021c2aac" />
+<img width="386" height="285" alt="image" src="https://github.com/user-attachments/assets/65ccf902-a596-4034-9175-263629c272ed" />
+<img width="314" height="163" alt="image" src="https://github.com/user-attachments/assets/12072fb6-8fff-4853-8491-b371080cf2c0" />
+<img width="253" height="49" alt="image" src="https://github.com/user-attachments/assets/04336168-1484-4f41-a3db-9e0a68f5f63f" />
+<img width="244" height="125" alt="image" src="https://github.com/user-attachments/assets/71e83b68-226a-4ab5-85fe-18a2691cd878" />
+<img width="149" height="105" alt="image" src="https://github.com/user-attachments/assets/2dfbaa6f-06bb-4c3b-abca-07b51aab72e6" />
+
+
+
+  
 </p>
 <p>
 <h2>Step 4: Bulk-Create Users and Test Login</h2>
-Log back into DC-1 as jane_admin. Open PowerShell ISE as an administrator, create a new file, and paste in the contents of the provided user-creation script. Run the script and observe as it automatically creates numerous new user accounts. Once finished, open ADUC to confirm that all the new accounts appear in the _EMPLOYEES OU. To verify everything is working, log out of Client-1 and attempt to log back in as one of the newly created users. Remember to stop (but not delete) your VMs in the Azure portal when you are done to save costs.
+Log back into DC-1 as jane_admin. Open PowerShell ISE as an administrator, create a new file, and paste in the contents of the provided user-creation script. Run the script and observe as it automatically creates numerous new user accounts. Once finished, open ADUC (Active Directory Users and Computers) to confirm that all the new accounts appear in the _EMPLOYEES OU. To verify everything is working, log out of Client-1 and attempt to log back in as one of the newly created users. Remember to stop (but not delete) your VMs in the Azure portal when you are done to save costs.
 </p>
 <br />
 
