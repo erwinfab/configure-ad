@@ -56,7 +56,9 @@ To populate the directory at scale, I used a **PowerShell** script to bulk-creat
 
 I verified the success of the automation by logging into **Client-1** using one of the newly generated accounts, confirming that domain-wide authentication and folder redirection were functioning correctly.
 
-[Insert image_ff6d70.png here: Showing the PowerShell script execution and the resulting users in ADUC]
+<img width="768" height="568" alt="image" src="https://github.com/user-attachments/assets/1a888595-c5bd-41e1-a90a-aa5fbc048120" />
+
+<img width="623" height="324" alt="image" src="https://github.com/user-attachments/assets/cf4cc37e-9216-4f13-b8ab-1d8e70480e0a" />
 
 ---
 
