@@ -27,7 +27,7 @@ I began by provisioning **DC-1** (Windows Server) and installing the **Active Di
 
 Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
 
-<img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
+<img width="553" height="304" alt="image" src="https://github.com/user-attachments/assets/9b43cc17-296a-4935-8cd6-e65bda5d1277" />
 <img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
 <img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
 <img width="286" height="212" alt="image" src="https://github.com/user-attachments/assets/08b87177-d016-4ae6-9183-bc876d2b34f7" />
