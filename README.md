@@ -48,6 +48,10 @@ I then successfully joined Client-1 to the `mydomain.com` domain. To maintain or
 
 <img width="322" height="384" alt="image" src="https://github.com/user-attachments/assets/c660973c-f4ce-41e1-b9ea-fbfe8534ffa9" />
 
+
+<img width="865" height="122" alt="image" src="https://github.com/user-attachments/assets/e5a1ec49-66cc-4073-9d67-688cdfb3c2de" />
+
+
 ---
 
 **Step 3**: **Configuring Remote Desktop Access**
