@@ -1,35 +1,25 @@
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 
-
 # On-premises Active Directory Deployed in the Cloud (Azure) 
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+*This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.*
+
+### Executive Summary
+This project involved the end-to-end deployment of a Windows-based **Active Directory** environment within **Microsoft Azure**. I provisioned a Domain Controller and a Client workstation, established a private network, and managed the full lifecycle of directory objects. This lab demonstrates my proficiency in **Identity and Access Management (IAM)**, network configuration, and administrative automation using PowerShell.
 
 
+### Environments and Technologies Used
+* **Microsoft Azure** (Virtual Machines, VNet, Private DNS)
+* **Remote Desktop Protocol (RDP)**
+* **Active Directory Domain Services (AD DS)**
+* **Active Directory Users and Computers (ADUC)**
+* **PowerShell ISE**
 
+### Operating Systems Used
+* Windows Server 2022 (Domain Controller)
+* Windows 10 (Client Workstation)
 
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Active Directory Domain Services
-- PowerShell
-
-<h2>Operating Systems Used </h2>
-
-- Windows Server 2022
-- Windows 10 (21H2)
-
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Step 1: Install Active Directory Domain Services on the DC-1 server and promote it as a new forest controller.
-- Step 2: Create a dedicated Domain Admin user ("jane_admin") and organize Active Directory by creating new Organizational Units (OUs).
-- Step 3: Join the Client-1 workstation to the new domain (mydomain.com) and verify its registration on the domain controller.
-- Step 4: Enable Remote Desktop for non-administrative users on Client-1 and use a PowerShell script on DC-1 to bulk-create domain users.
-
-<h2>Deployment and Configuration Steps</h2>
-
-<p>
+  
 <img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
 <img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
 <img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
@@ -45,14 +35,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 
-</p>
-<p>
+
 <h2>Step 1: Install Active Directory and Create Admin User</h2>
 First, log in to your DC-1 virtual machine and install the Active Directory Domain Services (ADDS) role. After the role is installed, promote the server to a new domain controller, choosing the option to set up a new forest named mydomain.com. Once the server restarts, log back in as the new domain administrator (mydomain.com\labuser). Open Active Directory Users and Computers (ADUC) and create two Organizational Units (OUs): _EMPLOYEES and _ADMINS. Create a new user named "Jane Doe" (username jane_admin) inside the _ADMINS OU. Finally, add this jane_admin user to the "Domain Admins" security group, log out, and log back in as mydomain.com\jane_admin for all future administrative work.
-</p>
-<br />
 
-<p>
+
+
 <img width="145" height="74" alt="image" src="https://github.com/user-attachments/assets/691064ba-3762-4193-af21-a9f4937d8b07" />
 <img width="163" height="194" alt="image" src="https://github.com/user-attachments/assets/6a3dbe4e-396c-41ae-90e7-8ad521265984" />
 <img width="175" height="118" alt="image" src="https://github.com/user-attachments/assets/8424188f-5302-4655-8740-e9dfd9df4e34" />
@@ -63,27 +51,23 @@ First, log in to your DC-1 virtual machine and install the Active Directory Doma
 
 
   
-</p>
-<p>
+
 <h2>Step 2: Join Client-1 to the Domain</h2>
 Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In a real lab, you would first set Client-1's DNS settings in the Azure Portal to point to DC-1's private IP address and restart, but this is marked as already done ). From the System Properties window, join Client-1 to the mydomain.com domain. After Client-1 restarts, log back into your DC-1 server and open ADUC (Active Directory Users and Computers). Verify that Client-1 now appears in the "Computers" container. Create a new OU (Organizational Unit) named _CLIENTS and drag the Client-1 computer object into it for organization.
-</p>
-<br />
 
-<p>
+
+
 <img width="262" height="132" alt="image" src="https://github.com/user-attachments/assets/9c77096c-04f2-4e80-9347-25dadcb84a29" />
 <img width="275" height="197" alt="image" src="https://github.com/user-attachments/assets/2fc74261-3061-4876-a229-e080bd00515a" />
 
 
 
-</p>
-<p>
+
 <h2>Step 3: Enable Remote Desktop for Domain Users</h2>
 Log in to Client-1, this time using your new domain admin account (mydomain.com\jane_admin). Open System Properties and navigate to the "Remote Desktop" tab. Click the "Select users" button and add the "Domain Users" group to the list, allowing any user in your domain to log in to this machine via RDP.
-</p>
-<br />
 
-<p>
+
+
 <img width="129" height="56" alt="image" src="https://github.com/user-attachments/assets/9d75dc9b-e38b-47bb-b3ef-8f17021c2aac" />
 <img width="386" height="285" alt="image" src="https://github.com/user-attachments/assets/65ccf902-a596-4034-9175-263629c272ed" />
 <img width="314" height="163" alt="image" src="https://github.com/user-attachments/assets/12072fb6-8fff-4853-8491-b371080cf2c0" />
@@ -94,10 +78,8 @@ Log in to Client-1, this time using your new domain admin account (mydomain.com\
 
 
   
-</p>
-<p>
+
 <h2>Step 4: Bulk-Create Users and Test Login</h2>
 Log back into DC-1 as jane_admin. Open PowerShell ISE as an administrator, create a new file, and paste in the contents of the provided user-creation script. Run the script and observe as it automatically creates numerous new user accounts. Once finished, open ADUC (Active Directory Users and Computers) to confirm that all the new accounts appear in the _EMPLOYEES OU. To verify everything is working, log out of Client-1 and attempt to log back in as one of the newly created users. Remember to stop (but not delete) your VMs in the Azure portal when you are done to save costs.
-</p>
-<br />
+
 
