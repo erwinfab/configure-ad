@@ -44,7 +44,7 @@ To integrate the client workstation, I adjusted the **DNS settings** in the Azur
 
 I then successfully joined Client-1 to the `mydomain.com` domain. To maintain organizational standards, I created a `_CLIENTS` OU in **Active Directory Users and Computers (ADUC)** and moved the Client-1 computer object into it.
 
-[Insert image_ff7051.png here: Showing the System Properties window joining the domain]
+<img width="322" height="384" alt="image" src="https://github.com/user-attachments/assets/c660973c-f4ce-41e1-b9ea-fbfe8534ffa9" />
 
 ---
 
