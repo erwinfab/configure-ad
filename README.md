@@ -27,7 +27,7 @@ I began by provisioning **DC-1** (Windows Server) and installing the **Active Di
 
 Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
 
-[Insert image_ff70b4.png here: Showing Server Manager and the AD DS role installation]
+<img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
 
 ---
 
