@@ -52,6 +52,9 @@ I then successfully joined Client-1 to the `mydomain.com` domain. To maintain or
 
 To simulate a real enterprise environment where non-admin employees need to access workstations remotely, I modified the **Remote Desktop settings** on Client-1. I added the **"Domain Users"** security group to the allowed RDP list, ensuring that any user created within the domain could log in to the workstation.
 
+
+<img width="546" height="388" alt="image" src="https://github.com/user-attachments/assets/211256fd-e97a-4893-bce4-76f443011a39" />
+
 ---
 
 **Step 4**: **Bulk User Creation & PowerShell Automation**
