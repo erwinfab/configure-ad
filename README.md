@@ -24,16 +24,25 @@ This project involved the end-to-end deployment of a Windows-based **Active Dire
 **Step 1**: **AD DS Installation and Domain Creation**
 
 I began by provisioning **DC-1** (Windows Server) and installing the **Active Directory Domain Services** role through Server Manager. I promoted the server to a **Domain Controller** and established a new forest named `mydomain.com`.
+
+* Added a new forest
+
 <img width="567" height="422" alt="image" src="https://github.com/user-attachments/assets/98a1294d-1d74-45c1-bbe6-723fa606db4a" />
 
 
 Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
 
+* Server Manager
+  
 <img width="553" height="304" alt="image" src="https://github.com/user-attachments/assets/9b43cc17-296a-4935-8cd6-e65bda5d1277" />
 <br/>
 
+* Added Roles
+
 <img width="624" height="409" alt="image" src="https://github.com/user-attachments/assets/959cc7c6-21fe-4028-9d6a-9f7431b5fc5a" />
 <br/>
+
+* Confirmation
 
 <img width="610" height="246" alt="image" src="https://github.com/user-attachments/assets/ca820f91-8e1b-40e8-b34b-cf5f47fc56f6" />
 
