@@ -28,9 +28,7 @@ I began by provisioning **DC-1** (Windows Server) and installing the **Active Di
 * Added a new forest
 
 <img width="567" height="422" alt="image" src="https://github.com/user-attachments/assets/98a1294d-1d74-45c1-bbe6-723fa606db4a" />
-
-
-Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
+<br/>
 
 * Server Manager
   
@@ -46,6 +44,8 @@ Following the restart, I created a dedicated Administrative User (**"jane_admin"
 
 <img width="610" height="246" alt="image" src="https://github.com/user-attachments/assets/ca820f91-8e1b-40e8-b34b-cf5f47fc56f6" />
 
+Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
+
 
 ---
 
@@ -56,7 +56,7 @@ To integrate the client workstation, I adjusted the **DNS settings** in the Azur
 I then successfully joined Client-1 to the `mydomain.com` domain. To maintain organizational standards, I created a `_CLIENTS` OU in **Active Directory Users and Computers (ADUC)** and moved the Client-1 computer object into it.
 
 <img width="322" height="384" alt="image" src="https://github.com/user-attachments/assets/c660973c-f4ce-41e1-b9ea-fbfe8534ffa9" />
-
+<br/>
 
 <img width="865" height="122" alt="image" src="https://github.com/user-attachments/assets/e5a1ec49-66cc-4073-9d67-688cdfb3c2de" />
 
@@ -69,6 +69,7 @@ To simulate a real enterprise environment where non-admin employees need to acce
 
 
 <img width="546" height="388" alt="image" src="https://github.com/user-attachments/assets/211256fd-e97a-4893-bce4-76f443011a39" />
+<br/>
 
 <img width="418" height="257" alt="image" src="https://github.com/user-attachments/assets/d3214641-a324-4072-bfce-abc5a1b32594" />
 
