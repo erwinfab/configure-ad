@@ -30,13 +30,11 @@ Following the restart, I created a dedicated Administrative User (**"jane_admin"
 <img width="553" height="304" alt="image" src="https://github.com/user-attachments/assets/9b43cc17-296a-4935-8cd6-e65bda5d1277" />
 <br/>
 
-<img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
+<img width="624" height="409" alt="image" src="https://github.com/user-attachments/assets/959cc7c6-21fe-4028-9d6a-9f7431b5fc5a" />
 <br/>
 
-<img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
-<br/>
+<img width="610" height="246" alt="image" src="https://github.com/user-attachments/assets/ca820f91-8e1b-40e8-b34b-cf5f47fc56f6" />
 
-<img width="286" height="212" alt="image" src="https://github.com/user-attachments/assets/08b87177-d016-4ae6-9183-bc876d2b34f7" />
 
 ---
 
