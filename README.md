@@ -27,6 +27,48 @@ I began by provisioning **DC-1** (Windows Server) and installing the **Active Di
 
 Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
 
+[Insert image_ff70b4.png here: Showing Server Manager and the AD DS role installation]
+
+---
+
+**Step 2**: **Network Integration & Joining the Domain**
+
+To integrate the client workstation, I adjusted the **DNS settings** in the Azure Portal to point the Client-1 VM toward the private IP of DC-1.
+
+I then successfully joined Client-1 to the `mydomain.com` domain. To maintain organizational standards, I created a `_CLIENTS` OU in **Active Directory Users and Computers (ADUC)** and moved the Client-1 computer object into it.
+
+[Insert image_ff7051.png here: Showing the System Properties window joining the domain]
+
+---
+
+**Step 3**: **Configuring Remote Desktop Access**
+
+To simulate a real enterprise environment where non-admin employees need to access workstations remotely, I modified the **Remote Desktop settings** on Client-1. I added the **"Domain Users"** security group to the allowed RDP list, ensuring that any user created within the domain could log in to the workstation.
+
+---
+
+**Step 4**: **Bulk User Creation & PowerShell Automation**
+
+To populate the directory at scale, I used a **PowerShell** script to bulk-create over 1,000 simulated user accounts. I executed this script within **PowerShell ISE** on DC-1, which automatically generated unique usernames and passwords and placed them into the `_EMPLOYEES` OU.
+
+I verified the success of the automation by logging into **Client-1** using one of the newly generated accounts, confirming that domain-wide authentication and folder redirection were functioning correctly.
+
+[Insert image_ff6d70.png here: Showing the PowerShell script execution and the resulting users in ADUC]
+
+---
+
+### Key Skills Demonstrated
+
+* **Domain Controller Promotion**: Building the root of trust for an enterprise network.
+* **Organizational Unit (OU) Design**: Structuring a directory for efficient Group Policy application.
+* **Network Administration**: Configuring private DNS and Virtual Networks in a cloud environment.
+* **Administrative Automation**: Using PowerShell to eliminate manual entry and reduce human error.
+* **Security Group Management**: Applying the Principle of Least Privilege for RDP access.
+
+
+
+
+
 
 <img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
 <img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
