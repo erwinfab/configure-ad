@@ -22,6 +22,7 @@ This project involved the end-to-end deployment of a Windows-based **Active Dire
 ## Deployment and Configuration Steps
 
 **Step 1**: **AD DS Installation and Domain Creation**
+
 I began by provisioning **DC-1** (Windows Server) and installing the **Active Directory Domain Services** role through Server Manager. I promoted the server to a **Domain Controller** and established a new forest named `mydomain.com`.
 
 Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
