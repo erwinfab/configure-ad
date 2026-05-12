@@ -25,7 +25,7 @@ This project involved the end-to-end deployment of a Windows-based **Active Dire
 
 I began by provisioning **DC-1** (Windows Server) and installing the **Active Directory Domain Services** role through Server Manager. I promoted the server to a **Domain Controller** and established a new forest named `mydomain.com`.
 
-* Added a new forest
+* Added a new forest.
 
 <img width="567" height="422" alt="image" src="https://github.com/user-attachments/assets/98a1294d-1d74-45c1-bbe6-723fa606db4a" />
 <br/>
@@ -55,9 +55,12 @@ To integrate the client workstation, I adjusted the **DNS settings** in the Azur
 
 I then successfully joined Client-1 to the `mydomain.com` domain. To maintain organizational standards, I created a `_CLIENTS` OU in **Active Directory Users and Computers (ADUC)** and moved the Client-1 computer object into it.
 
+* Joined Client-1 to domain.
+
 <img width="322" height="384" alt="image" src="https://github.com/user-attachments/assets/c660973c-f4ce-41e1-b9ea-fbfe8534ffa9" />
 <br/>
 
+* Created a client OU in ADUC and moved the Client-1 computer object into it.
 <img width="865" height="122" alt="image" src="https://github.com/user-attachments/assets/e5a1ec49-66cc-4073-9d67-688cdfb3c2de" />
 
 
@@ -65,11 +68,14 @@ I then successfully joined Client-1 to the `mydomain.com` domain. To maintain or
 
 **Step 3**: **Configuring Remote Desktop Access**
 
-To simulate a real enterprise environment where non-admin employees need to access workstations remotely, I modified the **Remote Desktop settings** on Client-1. I added the **"Domain Users"** security group to the allowed RDP list, ensuring that any user created within the domain could log in to the workstation.
+To simulate a real enterprise environment where non-admin employees need to access workstations remotely, I modified the **Remote Desktop settings** on Client-1. I added the **"Domain Users"** security group to the allowed RDP list, ensuring that any user created within the domain could log in to the workstation as well as a **Domain Admins** security group.
 
-
+* Domain Users security group created.
+  
 <img width="546" height="388" alt="image" src="https://github.com/user-attachments/assets/211256fd-e97a-4893-bce4-76f443011a39" />
 <br/>
+
+* Domain Admins security group created.
 
 <img width="418" height="257" alt="image" src="https://github.com/user-attachments/assets/d3214641-a324-4072-bfce-abc5a1b32594" />
 
@@ -82,12 +88,12 @@ To populate the directory at scale, I used a **PowerShell** script to bulk-creat
 
 I verified the success of the automation by logging into **Client-1** using one of the newly generated accounts, confirming that domain-wide authentication and folder redirection were functioning correctly.
 
+* PowerShell Script 
 <img width="768" height="568" alt="image" src="https://github.com/user-attachments/assets/1a888595-c5bd-41e1-a90a-aa5fbc048120" />
 <br/>
 
-
+* Usersnames and passwords placed into the employees OU after script execution.
 <img width="623" height="324" alt="image" src="https://github.com/user-attachments/assets/cf4cc37e-9216-4f13-b8ab-1d8e70480e0a" />
-
 
 ---
 
