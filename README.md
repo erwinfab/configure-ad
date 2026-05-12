@@ -19,7 +19,14 @@ This project involved the end-to-end deployment of a Windows-based **Active Dire
 * Windows Server 2022 (Domain Controller)
 * Windows 10 (Client Workstation)
 
-  
+## Deployment and Configuration Steps
+
+**Step 1**: **AD DS Installation and Domain Creation**
+I began by provisioning **DC-1** (Windows Server) and installing the **Active Directory Domain Services** role through Server Manager. I promoted the server to a **Domain Controller** and established a new forest named `mydomain.com`.
+
+Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
+
+
 <img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
 <img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
 <img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
