@@ -61,6 +61,9 @@ To simulate a real enterprise environment where non-admin employees need to acce
 
 <img width="546" height="388" alt="image" src="https://github.com/user-attachments/assets/211256fd-e97a-4893-bce4-76f443011a39" />
 
+<img width="418" height="257" alt="image" src="https://github.com/user-attachments/assets/d3214641-a324-4072-bfce-abc5a1b32594" />
+
+
 ---
 
 **Step 4**: **Bulk User Creation & PowerShell Automation**
@@ -85,72 +88,4 @@ I verified the success of the automation by logging into **Client-1** using one 
 * **Network Administration**: Configuring private DNS and Virtual Networks in a cloud environment.
 * **Administrative Automation**: Using PowerShell to eliminate manual entry and reduce human error.
 * **Security Group Management**: Applying the Principle of Least Privilege for RDP access.
-
-
-
-
-
-
-<img width="278" height="157" alt="image" src="https://github.com/user-attachments/assets/ae4b0d52-a498-46af-ae80-6588b8806fb6" />
-<img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
-<img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
-<img width="238" height="139" alt="image" src="https://github.com/user-attachments/assets/bd60fb6c-e359-44b2-8281-48195dd1854e" />
-<img width="286" height="212" alt="image" src="https://github.com/user-attachments/assets/08b87177-d016-4ae6-9183-bc876d2b34f7" />
-<img width="257" height="67" alt="image" src="https://github.com/user-attachments/assets/184a723b-bca6-42ef-89c4-71dfe1ac562b" />
-<img width="142" height="74" alt="image" src="https://github.com/user-attachments/assets/42208fc9-167f-4136-93fc-5311a1611270" />
-<img width="134" height="113" alt="image" src="https://github.com/user-attachments/assets/a61affc2-c865-4889-bdd1-872677e3ff10" />
-<img width="428" height="64" alt="image" src="https://github.com/user-attachments/assets/eed04ab1-722d-49b6-a388-9d8b23e9ecb3" />
-<img width="212" height="130" alt="image" src="https://github.com/user-attachments/assets/3f6e6b67-696c-4adf-887a-a4ad7da49034" />
-
-
-
-
-
-
-<h2>Step 1: Install Active Directory and Create Admin User</h2>
-First, log in to your DC-1 virtual machine and install the Active Directory Domain Services (ADDS) role. After the role is installed, promote the server to a new domain controller, choosing the option to set up a new forest named mydomain.com. Once the server restarts, log back in as the new domain administrator (mydomain.com\labuser). Open Active Directory Users and Computers (ADUC) and create two Organizational Units (OUs): _EMPLOYEES and _ADMINS. Create a new user named "Jane Doe" (username jane_admin) inside the _ADMINS OU. Finally, add this jane_admin user to the "Domain Admins" security group, log out, and log back in as mydomain.com\jane_admin for all future administrative work.
-
-
-
-<img width="145" height="74" alt="image" src="https://github.com/user-attachments/assets/691064ba-3762-4193-af21-a9f4937d8b07" />
-<img width="163" height="194" alt="image" src="https://github.com/user-attachments/assets/6a3dbe4e-396c-41ae-90e7-8ad521265984" />
-<img width="175" height="118" alt="image" src="https://github.com/user-attachments/assets/8424188f-5302-4655-8740-e9dfd9df4e34" />
-<img width="433" height="77" alt="image" src="https://github.com/user-attachments/assets/cc3c5692-4c1f-4998-8b20-8295181c3b7a" />
-<img width="190" height="214" alt="image" src="https://github.com/user-attachments/assets/bd5d1a9c-e3c3-4d1c-9461-7ee6e9d84923" />
-<img width="435" height="59" alt="image" src="https://github.com/user-attachments/assets/09ae9291-bcdf-4459-8b7d-f45efed7b4d4" />
-<img width="434" height="62" alt="image" src="https://github.com/user-attachments/assets/7ebf3a44-2691-48fd-9cec-b5bb7eba03f0" />
-
-
-  
-
-<h2>Step 2: Join Client-1 to the Domain</h2>
-Next, log in to the Client-1 VM as the local administrator (labuser). (Note: In a real lab, you would first set Client-1's DNS settings in the Azure Portal to point to DC-1's private IP address and restart, but this is marked as already done ). From the System Properties window, join Client-1 to the mydomain.com domain. After Client-1 restarts, log back into your DC-1 server and open ADUC (Active Directory Users and Computers). Verify that Client-1 now appears in the "Computers" container. Create a new OU (Organizational Unit) named _CLIENTS and drag the Client-1 computer object into it for organization.
-
-
-
-<img width="262" height="132" alt="image" src="https://github.com/user-attachments/assets/9c77096c-04f2-4e80-9347-25dadcb84a29" />
-<img width="275" height="197" alt="image" src="https://github.com/user-attachments/assets/2fc74261-3061-4876-a229-e080bd00515a" />
-
-
-
-
-<h2>Step 3: Enable Remote Desktop for Domain Users</h2>
-Log in to Client-1, this time using your new domain admin account (mydomain.com\jane_admin). Open System Properties and navigate to the "Remote Desktop" tab. Click the "Select users" button and add the "Domain Users" group to the list, allowing any user in your domain to log in to this machine via RDP.
-
-
-
-<img width="129" height="56" alt="image" src="https://github.com/user-attachments/assets/9d75dc9b-e38b-47bb-b3ef-8f17021c2aac" />
-<img width="386" height="285" alt="image" src="https://github.com/user-attachments/assets/65ccf902-a596-4034-9175-263629c272ed" />
-<img width="314" height="163" alt="image" src="https://github.com/user-attachments/assets/12072fb6-8fff-4853-8491-b371080cf2c0" />
-<img width="253" height="49" alt="image" src="https://github.com/user-attachments/assets/04336168-1484-4f41-a3db-9e0a68f5f63f" />
-<img width="244" height="125" alt="image" src="https://github.com/user-attachments/assets/71e83b68-226a-4ab5-85fe-18a2691cd878" />
-<img width="149" height="105" alt="image" src="https://github.com/user-attachments/assets/2dfbaa6f-06bb-4c3b-abca-07b51aab72e6" />
-
-
-
-  
-
-<h2>Step 4: Bulk-Create Users and Test Login</h2>
-Log back into DC-1 as jane_admin. Open PowerShell ISE as an administrator, create a new file, and paste in the contents of the provided user-creation script. Run the script and observe as it automatically creates numerous new user accounts. Once finished, open ADUC (Active Directory Users and Computers) to confirm that all the new accounts appear in the _EMPLOYEES OU. To verify everything is working, log out of Client-1 and attempt to log back in as one of the newly created users. Remember to stop (but not delete) your VMs in the Azure portal when you are done to save costs.
-
 
