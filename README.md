@@ -28,8 +28,14 @@ I began by provisioning **DC-1** (Windows Server) and installing the **Active Di
 Following the restart, I created a dedicated Administrative User (**"jane_admin"**) and organized the directory by creating **Organizational Units (OUs)** for `_EMPLOYEES` and `_ADMINS`.
 
 <img width="553" height="304" alt="image" src="https://github.com/user-attachments/assets/9b43cc17-296a-4935-8cd6-e65bda5d1277" />
+<br/>
+
 <img width="315" height="208" alt="image" src="https://github.com/user-attachments/assets/2846cb29-ecf6-4bb3-a899-08936597174a" />
+<br/>
+
 <img width="308" height="125" alt="image" src="https://github.com/user-attachments/assets/f7f0a86a-45b9-4e71-acb3-8884a107b4f5" />
+<br/>
+
 <img width="286" height="212" alt="image" src="https://github.com/user-attachments/assets/08b87177-d016-4ae6-9183-bc876d2b34f7" />
 
 ---
@@ -57,8 +63,11 @@ To populate the directory at scale, I used a **PowerShell** script to bulk-creat
 I verified the success of the automation by logging into **Client-1** using one of the newly generated accounts, confirming that domain-wide authentication and folder redirection were functioning correctly.
 
 <img width="768" height="568" alt="image" src="https://github.com/user-attachments/assets/1a888595-c5bd-41e1-a90a-aa5fbc048120" />
+<br/>
+
 
 <img width="623" height="324" alt="image" src="https://github.com/user-attachments/assets/cf4cc37e-9216-4f13-b8ab-1d8e70480e0a" />
+
 
 ---
 
