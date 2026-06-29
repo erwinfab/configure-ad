@@ -103,5 +103,5 @@ I verified the success of the automation by logging into **Client-1** using one 
 * **Organizational Unit (OU) Design**: Structuring a directory for efficient Group Policy application.
 * **Network Administration**: Configuring private DNS and Virtual Networks in a cloud environment.
 * **Administrative Automation**: Using PowerShell to eliminate manual entry and reduce human error.
-* **Security Group Management**: Applying the Principle of Least Privilege for RDP access.
+* **Security Group Management**: Applying the Principle of Least Privilege for RDP access (Ex. Giving employees a key card that only opens the front door and their specific office door.)
 
