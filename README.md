@@ -13,7 +13,7 @@ This project involved the end-to-end deployment of a Windows-based **Active Dire
 * **Remote Desktop Protocol (RDP)**
 * **Active Directory Domain Services (AD DS)**
 * **Active Directory Users and Computers (ADUC)**
-* **PowerShell ISE**
+* **PowerShell ISE (Integrated Scripting Environment)**
 
 ### Operating Systems Used
 * Windows Server 2022 (Domain Controller)
@@ -84,7 +84,7 @@ To simulate a real enterprise environment where non-admin employees need to acce
 
 **Step 4**: **Bulk User Creation & PowerShell Automation**
 
-To populate the directory at scale, I used a **PowerShell** script to bulk-create over 1,000 simulated user accounts. I executed this script within **PowerShell ISE** on DC-1, which automatically generated unique usernames and passwords and placed them into the `_EMPLOYEES` OU.
+To populate the directory at scale, I used a **PowerShell** script to bulk-create over 1,000 simulated user accounts. I executed this script within **PowerShell ISE**(Integrated Scripting Environment) on DC-1, which automatically generated unique usernames and passwords and placed them into the `_EMPLOYEES` OU.
 
 I verified the success of the automation by logging into **Client-1** using one of the newly generated accounts, confirming that domain-wide authentication and folder redirection were functioning correctly.
 
