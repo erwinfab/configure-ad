@@ -68,7 +68,7 @@ I then successfully joined Client-1 to the `mydomain.com` domain. To maintain or
 
 **Step 3**: **Configuring Remote Desktop Access**
 
-To simulate a real enterprise environment where non-admin employees need to access workstations remotely, I modified the **Remote Desktop settings** on Client-1. I added the **"Domain Users"** security group to the allowed RDP list, ensuring that any user created within the domain could log in to the workstation as well as a **Domain Admins** security group.
+To simulate a real enterprise environment where non-admin employees need to access workstations remotely, I modified the **Remote Desktop settings** on Client-1. I added the **"Domain Users"** security group to the allowed RDP list, ensuring that any user created within the domain could log in to the workstation as well as a **"Domain Admins"** security group.
 
 * Domain Users security group created.
   
